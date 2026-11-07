@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "font";
+    src: url("font.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe8f0;
+    font-family: 'font';
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    color: #d77c9e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
