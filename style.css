@@ -20,12 +20,20 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 40px;
 }
 
 .calculator {
-    color: #d77c9e;
+    background-color: #fff7fa;
+    width: 340px;
+    border-radius: 25px;
     text-align: center;
+    padding: 25px;
+}
+
+h2 {
+    color: #d77c9e;
     margin-bottom: 20px;
 }
 
@@ -37,7 +45,9 @@ body {
     border-radius: 12px;
     margin-bottom: 20px;
     min-height: 75px;
+    padding: 15px;
     overflow: hidden;
+    
 }
 
 .buttons {
@@ -53,6 +63,8 @@ button {
     font-size: 20px;
     border-radius: 12px;
     cursor: pointer;
+    padding: 15px;
+    font-family: font;
 }
 
 button:hover {
@@ -74,4 +86,15 @@ button:active {
 
 .operator:hover {
     background-color: #dc7e9f;
+}
+
+.equal {
+    grid-column: span 2;
+}
+
+p {
+    text-align: center;
+    color: #d77c9e;
+    margin-top: 18px;
+    font-size: 13px;
 }
