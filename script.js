@@ -16,3 +16,11 @@ function calculate() {
     let answer = eval(display.innerText);
     display.innerText = answer;
 }
+
+function append(value) {
+    if (display.innerText == "0") {
+        display.innerText = value;
+    } else {
+        display.innerText = display.innerText + value;
+    }
+}
