@@ -1,7 +1,11 @@
 let display = document.getElementById("display");
 
 function append(value) {
-    display.innerText = display.innerText + value;
+    if (display.innerText == "0" && value != "%") {
+        display.innerText = value;
+    } else {
+        display.innerText = display.innerText + value;
+    }
 }
 
 function clearDisplay() {
@@ -10,17 +14,13 @@ function clearDisplay() {
 
 function deleteLast() {
     display.innerText = display.innerText.slice(0, -1);
+
+    if (display.innerText == "") {
+        display.innerText = "0";
+    }
 }
 
 function calculate() {
     let answer = eval(display.innerText);
     display.innerText = answer;
-}
-
-function append(value) {
-    if (display.innerText == "0") {
-        display.innerText = value;
-    } else {
-        display.innerText = display.innerText + value;
-    }
 }
