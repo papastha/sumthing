@@ -1,4 +1,5 @@
 let display = document.getElementById("display");
+let historyList = document.getElementById("history-list");
 
 function append(value) {
     if (display.innerText == "0" && value != "%") {
@@ -21,6 +22,20 @@ function deleteLast() {
 }
 
 function calculate() {
-    let answer = eval(display.innerText);
-    display.innerText = answer;
+    let expression = display.innerText;
+    try {
+        let answer = eval(expression);
+
+        display.innerText = eval(expression);
+
+        display.innerText = answer;
+        display.innerHTML += "<p>" + expression + "=" + answer + "</p>";
+    } catch {
+        display.innerText = "Error";
+    }
+}
+
+
+function clearHistory() {
+    historyList.innerHTML = "<p>no calculations yet!</p>";
 }

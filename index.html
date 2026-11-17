@@ -14,7 +14,9 @@
                     <button class="special" onclick="clearDisplay()">AC</button>
                     <button class="special" onclick="deleteLast()">⌫</button>
                     <button class="special" onclick="append('%')">%</button>
-                    <button class="operator" onclick="append('/')">÷</button>
+                    <div class="melody">
+                        <img src="mymelody.jpg" alt="My Melody">
+                    </div>
 
                     <button onclick="append('7')">7</button>
                     <button onclick="append('8')">8</button>
@@ -35,6 +37,7 @@
                     <button onclick="append('.')">.</button>
                     <button class="operator equal" onclick="calculate()">=</button>
                 </div>
+            </div>
             <div class="history">
                 <h3>history</h3>
                 <button onclick="clearHistory()">clear</button>

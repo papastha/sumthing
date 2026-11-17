@@ -98,3 +98,31 @@ p {
     margin-top: 18px;
     font-size: 13px;
 }
+
+.hisotry {
+    margin-top: 25px;
+}
+
+.history h3 {
+    color: #d77c9e;
+    margin-bottom: 10px;
+}
+
+#history-list {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.melody {
+    background-color: #fce5ed;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.melody img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
